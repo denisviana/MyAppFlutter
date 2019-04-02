@@ -13,6 +13,7 @@ class LoginScreen extends StatefulWidget {
   _LoginScreenState createState() => _LoginScreenState();
 }
 
+
 class _LoginScreenState extends State<LoginScreen> {
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
@@ -25,7 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold( //https://docs.flutter.io/flutter/material/Scaffold-class.html
       key: _scaffoldKey,
       backgroundColor: Colors.white,
       body: Container(
@@ -61,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
               MarginVertically(20.0),
 
-              TextFormField(
+              TextFormField( //https://docs.flutter.io/flutter/material/TextFormField-class.html
                 keyboardType: TextInputType.emailAddress, //Input type, in this case is e-mail
                 textInputAction: TextInputAction.next, //Action when press enter in keyboard
                 onSaved: (String value){

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/*You can create custom widgets*/
+
 class CustomButton extends StatelessWidget{
 
   String _title;
